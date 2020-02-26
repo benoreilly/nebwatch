@@ -24,7 +24,9 @@ function Stopwatch(elem) {
         var minutes = time.getMinutes().toString();
         var seconds = time.getSeconds().toString();
         var milliseconds = time.getMilliseconds().toString();
-        var ms = milliseconds.slice(0, 2);
+
+        // New string without third millisecond digit
+        var ms = milliseconds.substring(0, 2);
 
         // if (minutes.length < 2) {
         //     minutes = '0' + minutes;
@@ -34,13 +36,11 @@ function Stopwatch(elem) {
         //     seconds = '0' + seconds;
         // }
         
-
-        while (milliseconds.length < 3) {
-            milliseconds = '0' + milliseconds;
+        while (ms.length < 2) {
+            ms = '0' + ms;
         }
 
-        // return minutes + ' m ' + seconds + ' s ' + ms + ' ms ';
-        return minutes + ' m ' + ' ' + seconds + ' s ' + ' ' + milliseconds;
+        return minutes + ' m ' + ' ' + seconds + ' s ' + ' ' + ms;
     }
 
   
