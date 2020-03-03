@@ -27,6 +27,12 @@ h1 img {
   font-size: 4rem;
 }
 
+.dateBox span {
+  font-size: 2rem;
+  color: white;
+  padding: 10px;
+}
+
 .timer_btns {
   display: flex;
   justify-content: space-evenly;
