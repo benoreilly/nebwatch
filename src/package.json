@@ -11,11 +11,11 @@
     "icon": "assets/icon.png",
     "toolbar": true,
     "width": 1000,
-    "height": 500,
+    "height": 700,
     "min_width": 500,
     "min_height": 300,
     "max_width": 1100,
-    "max_height": 600,
+    "max_height": 900,
     "position": "mouse",
     "resizable": true
   },

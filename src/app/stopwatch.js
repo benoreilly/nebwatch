@@ -24,6 +24,9 @@ function Stopwatch(elem) {
         var minutes = time.getMinutes().toString();
         var seconds = time.getSeconds().toString();
         var milliseconds = time.getMilliseconds().toString();
+        //var hours = time.getHours().toString();
+
+        var hours = ((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toFixed(0);
 
         // New string without third millisecond digit
         var ms = milliseconds.substring(0, 2);
@@ -40,7 +43,7 @@ function Stopwatch(elem) {
             ms = '0' + ms;
         }
 
-        return minutes + ' m ' + ' ' + seconds + ' s ' + ' ' + ms;
+        return hours + ' h ' + ' ' + minutes + ' m ' + ' ' + seconds + ' s ' + ' ' + ms;
     }
 
   
@@ -67,3 +70,12 @@ function Stopwatch(elem) {
 
 
 
+// function getShowTime(){
+//     updatedTime = new Date().getTime();
+//     if (savedTime){
+//       difference = (updatedTime - startTime) + savedTime;
+//     } else {
+//       difference =  updatedTime - startTime;
+//     }
+//     // var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+//     var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
