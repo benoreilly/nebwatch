@@ -26,7 +26,7 @@ function Stopwatch(elem) {
         var milliseconds = time.getMilliseconds().toString();
         //var hours = time.getHours().toString();
 
-        var hours = ((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toFixed(0);
+        var hours = ((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toFixed(1);
 
         // New string without third millisecond digit
         var ms = milliseconds.substring(0, 2);
