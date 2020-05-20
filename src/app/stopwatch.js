@@ -69,6 +69,8 @@ function Stopwatch(elem) {
 }
 
 
+// npm run prod
+
 
 // function getShowTime(){
 //     updatedTime = new Date().getTime();
