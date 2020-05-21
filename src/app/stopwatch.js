@@ -69,15 +69,4 @@ function Stopwatch(elem) {
 }
 
 
-// npm run prod
-
-
-// function getShowTime(){
-//     updatedTime = new Date().getTime();
-//     if (savedTime){
-//       difference = (updatedTime - startTime) + savedTime;
-//     } else {
-//       difference =  updatedTime - startTime;
-//     }
-//     // var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-//     var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+// delete dist folder(here in VScode to get around admin issue when using explorer) and then do npm run prod
