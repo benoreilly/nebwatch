@@ -10,14 +10,15 @@
     "title": "StopWatch",
     "icon": "assets/icon.png",
     "toolbar": true,
-    "width": 500,
-    "height": 400,
+    "width": 300,
+    "height": 300,
     "min_width": 200,
     "min_height": 200,
     "max_width": 1100,
     "max_height": 900,
     "position": "mouse",
-    "resizable": true
+    "resizable": false,
+    "always-on-top": true
   },
   "keywords": [],
   "author": "",
