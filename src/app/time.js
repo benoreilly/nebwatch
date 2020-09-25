@@ -1,17 +1,21 @@
 var timer = document.getElementById('timer');
 var toggleBtn = document.getElementById('toggle');
 var resetBtn = document.getElementById('reset');
+var spinnerImg = document.getElementById('spinner');
 
 var watch = new Stopwatch(timer);
 
 function start() {
     toggleBtn.textContent = 'Stop';
     watch.start();
+    spinnerImg.className = "spinner";
 }
 
 function stop() {
     toggleBtn.textContent = 'Start';
+    spinnerImg.className = "";
     watch.stop();
+    
 }
 
 toggleBtn.addEventListener('click', function() {

@@ -17,8 +17,8 @@
     "max_width": 1100,
     "max_height": 900,
     "position": "mouse",
-    "resizable": false,
-    "always-on-top": true
+    "resizable": true,
+    "isAlwaysOnTop": true
   },
   "keywords": [],
   "author": "",

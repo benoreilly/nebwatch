@@ -84,10 +84,6 @@ body {
 }
 
 .spinner {
-  border-radius: 50%;
-  color: #fff;
-  height: 30px;
-  width: 30px;
   position: relative;
   animation: roll 2.5s infinite linear;
   -moz-transform: rotate(30deg);
